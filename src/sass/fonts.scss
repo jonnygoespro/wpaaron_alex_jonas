@@ -1,0 +1,15 @@
+// TODO: Host fonts locally with https://google-webfonts-helper.herokuapp.com/fonts
+@font-face {
+    font-family: SourceSansProExtraLight;
+    src: url(./fonts/SourceSansPro-ExtraLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: SourceSansProLight;
+    src: url(./fonts/SourceSansPro-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: SourceSansProSemiBold;
+    src: url(./fonts/SourceSansPro-SemiBold.ttf) format('truetype');
+}

@@ -1,0 +1,42 @@
+@include breakpoint($desktop) {
+    footer {
+        background-color: $clr-neutral-600;
+        padding-left: 32px;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        padding-right: 32px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+
+        h4
+        {
+            font-family: $ff-light;
+            font-size: $fs-500;
+            color: $clr-neutral-100;
+            font-weight: $fw-200;
+            margin-bottom: 5px;
+        }
+        p{
+            font-family: $ff-light;
+            font-size: $fs-300;
+            color: $clr-neutral-100;
+            font-weight: $fw-200;
+            margin-bottom: 10px;
+        }
+        a
+        {
+            font-family: $ff-light;
+            font-size: $fs-300;
+            color: $clr-primary-600;
+            font-weight: $fw-200;
+            text-decoration: none;
+        }
+        #privacy
+        {
+            margin-top: 10px;
+        }
+    }
+}

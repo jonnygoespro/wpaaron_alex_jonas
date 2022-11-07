@@ -1,0 +1,59 @@
+@include breakpoint(0, $mobile) {
+    header {
+        height: 40vh;
+
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 18px 16px;
+        }
+
+        h1 {
+            font-family: $ff-light;
+            font-size: $fs-300;
+            color: $clr-neutral-100;
+        }
+
+        .name {
+            font-family: $ff-semibold;
+            font-size: $fs-300;
+            color: $clr-neutral-100;
+            text-transform: uppercase;
+        }
+    }
+
+    #mainnav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-color: $clr-neutral-600;
+        z-index: 5;
+
+        ul {
+            position: fixed;
+            padding: 3rem 1rem 1rem 1rem;
+            margin-top: 0rem;
+            max-width: 15rem;
+            box-shadow: -5px 0 10px 0 $clr-neutral-400;
+            top: 0;
+            right: 0;
+            background-color: $clr-neutral-600;
+            height: 100vh;
+            width: 100%;
+
+            li {
+                text-align: right;
+                margin-top: 24px;
+            }
+
+            a {
+                color: $clr-neutral-100;
+                list-style-type: none;
+                text-decoration: none;
+                font-family: $ff-light;
+                font-size: 1.375rem;
+            }
+        }
+    }
+}

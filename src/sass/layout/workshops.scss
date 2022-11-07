@@ -1,0 +1,433 @@
+#workshops {
+    padding-block: $section-padding-mobile;
+
+    &>p,
+    h2 {
+        padding-left: 13px;
+    }
+
+    .workshop-grid {
+        $icon-size: 116px;
+        $number-size: 44px;
+
+        position: relative;
+        display: grid;
+        row-gap: $icon-size;
+        grid-template-columns: 1fr 58px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "leftSide3 rightSide3" "leftSide2 rightSide2" "leftSide1 rightSide1";
+        margin-top: 88px;
+
+        * {
+            margin-bottom: 16px;
+        }
+
+        .leftSide {
+            padding-top: $icon-size;
+            grid-area: leftSide;
+            background-color: $clr-neutral-600;
+            margin-bottom: 0px;
+        }
+
+        .rightSide {
+            grid-area: rightSide;
+            height: 100%;
+            background-color: $clr-neutral-200;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+
+        .apply {
+            transform: rotate(180deg);
+            min-width: fit-content;
+            writing-mode: vertical-rl;
+            margin-bottom: 0px;
+            position: absolute;
+            bottom: 0px;
+            color: $clr-neutral-700;
+            margin: 16px 8px 16px 12px;
+        }
+
+        h3 {
+            font-family: $ff-light;
+            font-size: $fs-500;
+            color: $clr-primary-500;
+        }
+
+        p {
+            font-family: $ff-light;
+            font-size: $fs-300;
+            color: $clr-neutral-100;
+            line-height: 23px;
+            margin-bottom: 32px;
+            line-height: 1.75rem;
+        }
+
+        .icon {
+            background-color: $clr-neutral-500;
+            border-radius: 100vh;
+            padding: 16px;
+        }
+
+        .quote {
+            width: fit-content;
+            margin: auto;
+            padding-bottom: 16px;
+
+            img {
+                display: block;
+                margin: auto;
+                width: 80px;
+                padding-bottom: 16px;
+            }
+
+            blockquote {
+                text-align: center;
+                color: $clr-neutral-100;
+                font-size: $fs-500;
+                font-family: $ff-light;
+                margin: auto;
+                margin-bottom: 32px;
+            }
+        }
+
+        .leftSide3 {
+            grid-area: leftSide3;
+            position: relative;
+        }
+
+        .rightSide3 {
+            grid-area: rightSide3;
+            position: relative;
+        }
+
+        .leftSide2 {
+            grid-area: leftSide2;
+            position: relative;
+        }
+
+        .rightSide2 {
+            grid-area: rightSide2;
+            position: relative;
+        }
+
+        .leftSide1 {
+            grid-area: leftSide1;
+            position: relative;
+        }
+
+        .rightSide1 {
+            grid-area: rightSide1;
+            position: relative;
+        }
+    }
+}
+
+@include breakpoint(0, 920) {
+    #workshops {
+        .workshop-grid {
+            $icon-size: 116px;
+            $number-size: 44px;
+
+            .leftSide {
+
+                h3,
+                p,
+                .button {
+                    margin-left: 13px;
+                    margin-right: 13px;
+                }
+            }
+
+            .index {
+                margin-left: 0px;
+                position: absolute;
+                font-size: $fs-600;
+                font-family: $ff-semibold;
+                color: $clr-primary-700;
+                background-color: $clr-neutral-300;
+                border-radius: 50%;
+                width: $number-size;
+                height: $number-size;
+                padding: ($number-size - 28px) / 2;
+                text-align: center;
+                top: - $icon-size / 2 - $number-size / 2 + 8px;
+                left: calc(50% + $icon-size / 2 - $number-size / 2 - 10px);
+                z-index: 3;
+            }
+
+            .icon {
+                margin-left: 0px;
+                position: absolute;
+                top: - $icon-size / 2;
+                left: calc(50% - $icon-size / 2);
+                width: $icon-size;
+                height: $icon-size;
+                z-index: 4;
+            }
+        }
+    }
+}
+
+@include breakpoint(921) {
+    #workshops {
+        padding-block: $section-padding-desktop;
+        width: auto;
+
+        .workshop-grid {
+            $icon-size: 116px;
+            $number-size: 44px;
+
+            margin-top: 68px;
+            position: relative;
+            background-color: $clr-neutral-100;
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "leftSide3 rightSide3" "leftSide2 rightSide2" "leftSide1 rightSide2";
+            gap: 16px 16px;
+            min-height: 3 * $icon-size;
+
+            .leftSide {
+                position: relative;
+                background-color: $clr-neutral-600;
+                gap: 0px 16px;
+                margin-bottom: 0px;
+                padding-left: 0px;
+                padding-top: 0px;
+
+                .index {
+                    position: absolute;
+                    left: -100px;
+                    font-size: $fs-990;
+                    font-family: $ff-semibold;
+                    width: auto;
+                    height: fit-content;
+                    line-height: 0.58;
+                    padding: 0px;
+                    color: $clr-neutral-600;
+                }
+
+                .workshop-content {
+                    grid-area: content;
+                    padding: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-bottom: 0px;
+
+                    h3 {
+                        font-size: $fs-700;
+                        margin-bottom: 16px;
+                        color: $clr-primary-500;
+                    }
+
+                    p {
+                        font-size: $fs-500;
+                        line-height: 2rem;
+                        margin-bottom: 32px;
+                        color: $clr-neutral-100;
+                    }
+
+                    .button {
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .icon {
+                    grid-area: icon;
+                    position: relative;
+                    max-height: 80%;
+                    width: auto;
+                    place-self: center;
+                    margin-bottom: 0px;
+                    background-color: $clr-neutral-500;
+                    border-radius: 100vh;
+                    padding: 16px;
+                }
+
+                .quote {
+                    position: relative;
+                    grid-area: quote;
+                    width: 100%;
+                    height: 100%;
+
+                    blockquote {
+                        padding: 32px;
+                        text-align: left;
+                        font-size: $fs-700;
+                        line-height: 3rem;
+                        color: $clr-neutral-100;
+                    }
+
+                    img {
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+                        padding-bottom: 0px;
+                        width: 40%;
+                        width: max(50%, 80px);
+                        margin: 0px;
+                    }
+                }
+            }
+
+            .rightSide {
+                place-self: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $clr-neutral-200;
+                height: 100%;
+
+                .apply {
+                    font-size: $fs-750;
+                    line-height: 3rem;
+                    transform: rotate(0deg);
+                    writing-mode: horizontal-tb;
+                    position: relative;
+                    width: 80%;
+                    text-align: center;
+                    margin: 0px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
+
+            .leftSide3 {
+                grid-area: leftSide3;
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr;
+                grid-template-areas: "content icon quote";
+
+                .index {
+                    top: 0px;
+                }
+            }
+
+            .rightSide3 {
+                grid-area: rightSide3;
+            }
+
+            .leftSide2 {
+                grid-area: leftSide2;
+                display: grid;
+                grid-template-columns: 1fr 1fr 2fr;
+                grid-template-areas: "quote icon content";
+
+                .index {
+                    margin: auto 0;
+                    top: 0;
+                    bottom: 0;
+                    line-height: 0.7;
+                }
+
+                .quote {
+                    img {
+                        top: 0px;
+                    }
+
+                    blockquote {
+                        position: absolute;
+                        bottom: 32px;
+                        padding: 0px;
+                        left: 32px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .rightSide2 {
+                grid-area: rightSide2;
+            }
+
+            .leftSide1 {
+                grid-area: leftSide1;
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-areas: "icon content quote";
+
+                .index {
+                    line-height: 0.71;
+                    bottom: 0px;
+                    margin: 0px;
+                }
+
+                .quote {
+                    img {
+                        top: 0px;
+                    }
+
+                    blockquote {
+                        position: absolute;
+                        bottom: 32px;
+                        padding: 0px;
+                        left: 32px;
+                        padding-left: 32px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .rightSide1 {
+                display: none;
+                width: 0px;
+                height: 0px;
+            }
+        }
+    }
+}
+
+@include breakpoint(921, 1200) {
+    #workshops {
+
+        .workshop-grid {
+            margin-left: 15%;
+            margin-right: 32px;
+
+            .leftSide {
+
+                .icon {
+                    height: auto;
+                    width: 80%;
+                }
+
+                .workshop-content {
+
+                    h3 {
+                        font-size: 1.375rem;
+                        line-height: 2rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                .quote {
+                    blockquote {
+                        font-size: 1.375rem;
+                        line-height: 2rem;
+                    }
+                }
+            }
+
+            .rightSide {
+                .apply {
+                    font-size: 1.375rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(1200) {
+    #workshops {
+        .workshop-grid {
+            margin-left: 7%;
+            margin-right: 32px;
+        }
+    }
+}

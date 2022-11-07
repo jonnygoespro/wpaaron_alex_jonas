@@ -1,0 +1,54 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  font-family: $ff-extralight;
+}
+
+.super-headline {
+  font-family: $ff-semibold;
+  font-size: $fs-300;
+  color: $clr-neutral-600;
+  text-transform: uppercase;
+}
+
+.headline {
+  font-family: $ff-light;
+  font-size: $fs-600;
+  color: $clr-primary-700;
+}
+
+@include breakpoint(921) {
+  .super-headline {
+    font-size: $fs-500;
+  }
+
+  .headline {
+    font-size: $fs-800;
+  }
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  border: 1px solid $clr-primary-600;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $ff-semibold;
+  font-size: $fs-300;
+  color: $clr-neutral-100;
+  padding: 1rem 1.5rem;
+}
+
+.button-black {
+  margin-top: 20px;
+  display: block;
+  width: fit-content;
+  border: 2px solid $clr-primary-600;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $ff-semibold;
+  font-size: $fs-300;
+  color: $clr-neutral-700;
+  padding: 0.75rem 2rem;
+}

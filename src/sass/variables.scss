@@ -1,0 +1,50 @@
+// MAX-WIDTH CONTAINER SIZE
+$max-width: 1920;
+
+// BREAKPOINTS
+$mobile: 720;
+$tablet: $mobile + 1;
+$desktop: $mobile + 1;
+$desktop2: 900 + 1;
+
+// COLORS
+
+// Neutral Colors
+$clr-neutral-100: hsl(0, 0%, 100%);
+$clr-neutral-200: hsl(0, 0%, 97%);
+$clr-neutral-300: hsl(0, 0%, 84%);
+$clr-neutral-400: hsla(0, 0%, 0%, 0.161);
+$clr-neutral-500: hsl(0, 0%, 35%);
+$clr-neutral-600: hsl(0, 0%, 21%);
+$clr-neutral-700: hsl(0, 0%, 10%);
+$clr-neutral-800: hsl(0, 0%, 0%);
+
+// Primary Colors
+$clr-primary-300: hsl(23, 100%, 97%);
+$clr-primary-500: hsl(26, 100%, 72%);
+$clr-primary-600: hsl(26, 86%, 69%);
+$clr-primary-700: hsl(26, 62%, 57%);
+
+// Font Sizes
+$fs-300: 1rem; // 16px
+$fs-400: 1.125rem; // 18px
+$fs-500: 1.375rem; // 22px
+$fs-600: 1.75rem; // 28px
+$fs-700: 2.375rem; // 38px
+$fs-750: 2.625rem; // 42px
+$fs-800: 4.25rem; // 68px
+$fs-900: 10rem; // 160px
+$fs-990: 14rem; // 300px
+
+// Font Weights
+$fw-200: 200;
+$fw-300: 300;
+$fw-600: 600;
+
+// Font Family
+$ff-extralight: SourceSansProExtraLight, sans-serif;
+$ff-light: SourceSansProLight, sans-serif;
+$ff-semibold: SourceSansProSemiBold, sans-serif;
+
+$section-padding-mobile: 64px;
+$section-padding-desktop: 164px;

@@ -1,0 +1,46 @@
+@include breakpoint(921) {
+    #about{
+        background-color: $clr-primary-300;
+        padding-block: $section-padding-desktop;
+        padding-left: 18px;
+        padding-right: 10%;
+
+        display: flex;
+        flex-direction: row;
+        
+        #about-image-box{
+            width: 50vw;
+            max-height: 580px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        #about-box
+        {
+            padding-top: 40px;
+            padding-bottom: 43px;
+            padding-left: 27px;
+            width: 50vw;
+
+            .super-headline {
+                text-transform: uppercase;
+            }
+
+            h2 {
+                margin-bottom: 15px;
+            }
+            .about-text
+            {
+                font-family: $ff-light;
+                font-size: $fs-300;
+                color: $clr-neutral-600;
+                line-height: 2;
+                margin-bottom: 15px;
+                max-width: 450px;
+            }
+        }
+    }
+}

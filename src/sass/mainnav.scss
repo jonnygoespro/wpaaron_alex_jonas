@@ -1,0 +1,49 @@
+header {
+    height: 40vh;
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 18px 16px;
+    }
+
+    h1 {
+        font-family: $ff-light;
+        font-size: $fs-300;
+        color: $clr-neutral-100;
+    }
+
+    .name {
+        font-family: $ff-semibold;
+        font-size: $fs-500;
+        color: $clr-neutral-100;
+        text-transform: uppercase;
+    }
+}
+
+@include breakpoint($desktop) {
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+
+        #mainnav {
+
+            ul {
+                display: flex;
+
+                a {
+                    color: $clr-primary-500;
+                    font-size: $fs-500;
+                    font-family: $ff-semibold;
+                    list-style-type: none;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid $clr-primary-500;
+                    margin: 18px 16px;
+                    padding: 0px;
+                    padding-bottom: 4px;
+                }
+            }
+        }
+    }
+}

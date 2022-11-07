@@ -1,0 +1,33 @@
+@include breakpoint(0, 920) {
+    #about{
+        background-color: $clr-primary-300;
+        padding-block: $section-padding-mobile;
+
+        img {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        #about-box
+        {
+            padding-right: 25px;
+            padding-left: 18px;
+
+            .super-headline {
+                text-transform: uppercase;
+            }
+
+            h2 {
+                margin-bottom: 15px;
+            }
+            .about-text
+            {
+                font-family: $ff-light;
+                font-size: $fs-300;
+                color: $clr-neutral-600;
+                line-height: 2;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
