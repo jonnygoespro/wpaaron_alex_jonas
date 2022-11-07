@@ -7,7 +7,7 @@ require 'recipe/common.php';
 set('application', 'aaron');
 
 // Project repository
-set('repository', 'https://github.com/YOUR-REPOSITORY-ON-GITHUB');
+set('repository', 'https://github.com/jonnygoespro/wpaaron_alex_jonas.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
@@ -22,10 +22,10 @@ set('shared_dirs', ['public/wp-content/uploads']);
 set('allow_anonymous_stats', false);
 
 // Hosts
-host('vm-YOUR-FH-VM-COLOR.multimediatechnology.at')
+host('vm-brandy.multimediatechnology.at')
     ->user('admin')
         ->port(5412)
-        ->set('deploy_path', '/home/admin/alex');
+        ->set('deploy_path', '/home/aaron/app');
 
 
 
