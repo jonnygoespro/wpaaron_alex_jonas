@@ -39,7 +39,7 @@
             </nav>
         </div>
         <div class="heroContainer">
-            <h2>I.</h2>
+            <h2>I believe you can dance.</h2>
             <a href="#" class="button">Book Workshop</a>
         </div>
     </header>
