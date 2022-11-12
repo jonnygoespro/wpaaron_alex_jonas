@@ -39,6 +39,8 @@ task('deploy', [
     'deploy:clear_paths',
     'deploy:symlink',
     'deploy:unlock',
+    'deploy:cleanup',
+    'deploy:success'
 ]);
 
 // [Optional] If deploy fails automatically unlock.

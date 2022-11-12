@@ -443,8 +443,8 @@ header .heroContainer {
 
 @media (min-width: 0rem) and (max-width: 57.5rem) {
   #workshops .workshop-grid .leftSide h3,
-#workshops .workshop-grid .leftSide p,
-#workshops .workshop-grid .leftSide .button {
+  #workshops .workshop-grid .leftSide p,
+  #workshops .workshop-grid .leftSide .button {
     margin-left: 13px;
     margin-right: 13px;
   }
