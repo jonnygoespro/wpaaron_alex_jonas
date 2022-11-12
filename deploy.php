@@ -17,14 +17,14 @@ set('shared_dirs', ['public/wp-content/uploads']);
 // set('writable_dirs', ['public/wp-content/uploads']);
 set('allow_anonymous_stats', false);
 
-// set('http_user', 'www-data');
-set('writable_mode', 'chmod');
-
 // Hosts
 host('vm-brandy.multimediatechnology.at')
-        ->set('remote_user','www-data')
+        ->set('remote_user','aaron')
         ->set('port','5412')
         ->set('deploy_path', '/home/aaron/app');
+
+set('http_user', 'www-data');
+set('writable_mode', 'chmod');
 
 // Composer
 set('composer_action', false);
