@@ -41,4 +41,4 @@ task('deploy', [
 ]);
 
 // [Optional] If deploy fails automatically unlock.
-after('deploy:failed', 'deploy:force_unlock');
+after('deploy:failed', 'deploy:unlock');
