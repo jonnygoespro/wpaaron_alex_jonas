@@ -31,6 +31,7 @@ desc('Deploy your project');
 task('deploy', [
     'deploy:info',
     'deploy:prepare',
+    'deploy:lock',
     'deploy:release',
     'deploy:update_code',
     'deploy:shared',
