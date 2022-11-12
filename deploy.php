@@ -3,11 +3,7 @@ namespace Deployer;
 
 require 'recipe/common.php';
 
-// Project name
-set('application', 'aaron');
-
-// Project repository
-set('repository', 'https://github.com/jonnygoespro/wpaaron_alex_jonas.git');
+set('repository','https://github.com/jonnygoespro/wpaaron_alex_jonas.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
@@ -23,15 +19,12 @@ set('allow_anonymous_stats', false);
 
 // Hosts
 host('vm-brandy.multimediatechnology.at')
-    ->user('admin')
-        ->port(5412)
+        ->set('remote_user','aaron')
+        ->set('port','5412')
         ->set('deploy_path', '/home/aaron/app');
-
-
 
 // Composer
 set('composer_action', false);
-
 
 // Tasks
 desc('Deploy your project');
@@ -46,8 +39,6 @@ task('deploy', [
     'deploy:clear_paths',
     'deploy:symlink',
     'deploy:unlock',
-    'cleanup',
-    'success'
 ]);
 
 // [Optional] If deploy fails automatically unlock.
