@@ -17,6 +17,9 @@ set('shared_dirs', ['public/wp-content/uploads']);
 // set('writable_dirs', ['public/wp-content/uploads']);
 set('allow_anonymous_stats', false);
 
+// set('http_user', 'www-data');
+set('writable_mode', 'chmod');
+
 // Hosts
 host('vm-brandy.multimediatechnology.at')
         ->set('remote_user','aaron')
