@@ -22,7 +22,7 @@ set('writable_mode', 'chmod');
 
 // Hosts
 host('vm-brandy.multimediatechnology.at')
-        ->set('remote_user','aaron')
+        ->set('remote_user','www-data')
         ->set('port','5412')
         ->set('deploy_path', '/home/aaron/app');
 
