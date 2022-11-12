@@ -31,7 +31,6 @@ desc('Deploy your project');
 task('deploy', [
     'deploy:info',
     'deploy:prepare',
-    //'deploy:lock',
     'deploy:release',
     'deploy:update_code',
     'deploy:shared',
@@ -39,9 +38,7 @@ task('deploy', [
     'deploy:clear_paths',
     'deploy:symlink',
     'deploy:unlock',
-    'deploy:cleanup',
-    'deploy:success'
 ]);
 
 // [Optional] If deploy fails automatically unlock.
-after('deploy:failed', 'deploy:unlock');
+after('deploy:failed', 'deploy:force_unlock');
