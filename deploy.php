@@ -1,7 +1,7 @@
 <?php
 namespace Deployer;
 
-require 'recipe/wordpress.php';
+require 'recipe/common.php';
 
 // Config
 
@@ -19,5 +19,13 @@ host('193.170.119.198')
     ->set('deploy_path', '~/app');
 
 // Hooks
+
+// Tasks
+desc('Deploy your project');
+task('deploy', [
+    'deploy:prepare',
+    'deploy:publish'
+]);
+
 
 after('deploy:failed', 'deploy:unlock');
