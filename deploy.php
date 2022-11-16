@@ -1,7 +1,7 @@
 <?php
 namespace Deployer;
 
-require 'recipe/common.php';
+require 'recipe/wordpress.php';
 
 // Config
 
