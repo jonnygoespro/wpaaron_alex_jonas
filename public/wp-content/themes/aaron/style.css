@@ -82,8 +82,8 @@ table {
 }
 
 .super-headline {
-  font-family: SourceSansProSemiBold, sans-serif;
-  font-size: 1rem;
+  font-family: SourceSansProSemiBold, sans-serif !important;
+  font-size: 1rem !important;
   color: hsl(0deg, 0%, 21%);
   text-transform: uppercase;
 }
@@ -96,10 +96,10 @@ table {
 
 @media (min-width: 57.5625rem) {
   .super-headline {
-    font-size: 1.375rem;
+    font-size: 1.375rem !important;
   }
   .headline {
-    font-size: 4.25rem;
+    font-size: 4.25rem !important;
   }
 }
 .button {
@@ -392,7 +392,7 @@ header .heroContainer {
   margin-bottom: 32px;
   line-height: 1.75rem;
 }
-#workshops .workshop-grid .icon {
+#workshops .workshop-grid .icon img {
   background-color: hsl(0deg, 0%, 35%);
   border-radius: 100vh;
   padding: 16px;
@@ -464,7 +464,7 @@ header .heroContainer {
     left: calc(50% + 58px - 22px - 10px);
     z-index: 3;
   }
-  #workshops .workshop-grid .icon {
+  #workshops .workshop-grid .icon img{
     margin-left: 0px;
     position: absolute;
     top: -58px;
@@ -540,7 +540,13 @@ header .heroContainer {
     margin-bottom: 0px;
     background-color: hsl(0deg, 0%, 35%);
     border-radius: 100vh;
-    padding: 16px;
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #workshops .workshop-grid .leftSide .icon img{
+    margin: 0px 16px;
   }
   #workshops .workshop-grid .leftSide .quote {
     position: relative;
@@ -654,7 +660,7 @@ header .heroContainer {
     margin-left: 15%;
     margin-right: 32px;
   }
-  #workshops .workshop-grid .leftSide .icon {
+  #workshops .workshop-grid .leftSide .icon img {
     height: auto;
     width: 80%;
   }
@@ -700,7 +706,7 @@ header .heroContainer {
   #about #about-box h2 {
     margin-bottom: 15px;
   }
-  #about #about-box .about-text {
+  #about #about-box p {
     font-family: SourceSansProLight, sans-serif;
     font-size: 1rem;
     color: hsl(0deg, 0%, 21%);
@@ -738,7 +744,7 @@ header .heroContainer {
   #about #about-box h2 {
     margin-bottom: 15px;
   }
-  #about #about-box .about-text {
+  #about #about-box p {
     font-family: SourceSansProLight, sans-serif;
     font-size: 1rem;
     color: hsl(0deg, 0%, 21%);
