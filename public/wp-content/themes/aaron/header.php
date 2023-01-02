@@ -19,7 +19,7 @@
 
         <?php 
 
-        $hero_query = new WP_Query( array("p" => 5) );
+        $hero_query = new WP_Query( array("p" => 9) );
         if ($hero_query->have_posts() ):
             while ($hero_query->have_posts() ): $hero_query->the_post(); 
 
