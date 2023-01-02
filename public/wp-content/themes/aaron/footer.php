@@ -1,7 +1,7 @@
 <footer>
     <?php 
 
-    $footer_query = new WP_Query( array("p" => 28) );
+    $footer_query = new WP_Query( array("p" => 33) );
     if ($footer_query->have_posts() ):
         while ($footer_query->have_posts() ): $footer_query->the_post(); 
 

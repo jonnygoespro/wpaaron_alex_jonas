@@ -43,7 +43,7 @@
 
             <?php 
 
-            $workshop_header_query = new WP_Query( array("p" => 11) );
+            $workshop_header_query = new WP_Query( array("p" => 10) );
             if ($workshop_header_query->have_posts() ):
                 while ($workshop_header_query->have_posts() ): $workshop_header_query->the_post(); 
 
@@ -123,7 +123,7 @@
         <section id="about">
             <?php 
 
-            $about_query = new WP_Query( array("p" => 19) );
+            $about_query = new WP_Query( array("p" => 20) );
             if ($about_query->have_posts() ):
                 while ($about_query->have_posts() ): $about_query->the_post(); 
 
@@ -151,7 +151,7 @@
         <section id="news">
             <?php 
 
-            $news_header_query = new WP_Query( array("p" => 30) );
+            $news_header_query = new WP_Query( array("p" => 31) );
             if ($news_header_query->have_posts() ):
                 while ($news_header_query->have_posts() ): $news_header_query->the_post(); 
 
